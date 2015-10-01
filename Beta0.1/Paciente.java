@@ -2,6 +2,11 @@ public class Paciente implements Comparable<Paciente> {
 	private String string;
 	private int value;
 
+	//Constructor
+	public Paciente(String string, int value){
+		this.string = string;
+		this.value = value;
+	}
 	public void setstring(String string){
 		this.string = string;
 	}
