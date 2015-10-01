@@ -1,5 +1,3 @@
-//import java.util.PriorityQueue;
-
-class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>{
+public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>{
 	
 }
