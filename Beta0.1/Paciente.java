@@ -1,5 +1,6 @@
-import java.util.PriorityQueue;
+public class Paciente implements Comparable<E> {
 
-class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>{
-	
+	public int compareTo(E object){
+		System.out.println("compareTo");
+	}
 }
