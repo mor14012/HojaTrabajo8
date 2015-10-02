@@ -1,32 +1,36 @@
 public class Paciente implements Comparable<Paciente> {
-	private String string;
-	private int value;
+	private String ficha;
+	private int prioridad; //Prioridad de la A a la E (1 a 5)
 
 	//Constructor
-	public Paciente(String string, int value){
-		this.string = string;
-		this.value = value;
+	public Paciente(String ficha, int prioridad){
+		this.ficha = ficha;
+		this.prioridad = prioridad;
 	}
-	public void setstring(String string){
-		this.string = string;
+	public void setficha(String ficha){
+		this.ficha = ficha;
 	}
-	public String getstring(){
-		return string;
+	public String getficha(){
+		return ficha;
 	}
-	public void setvalue(int value){
-		this.value = value;
+	public void setprioridad(int prioridad){
+		this.prioridad = prioridad;
 	}
-	public int getvalue(){
-		return value;
+	public int getprioridad(){
+		return prioridad;
 	}
 	public int compareTo(Paciente paciente){
-		if(value - paciente.getvalue()>0)
+		if(prioridad - paciente.getprioridad()>0)
 			return 1;
-		if(value - paciente.getvalue()<0)
+		if(prioridad - paciente.getprioridad()<0)
 			return -1;
 		return 0;
 	}
 	public String toString(){
-		return "String: "+string+"\nValue: "+value;
+		return "String: "+ficha+"\nValue: "+prioridad;
 	}
 }
+
+/*
+Comparable http://stackoverflow.com/questions/13244289/how-to-implement-comparable-class
+*/
