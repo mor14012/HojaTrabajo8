@@ -1,3 +1,6 @@
+/*
+Codigo fuente obtenido del Capitulo 13.4.1 del libro Java Structures de Duane A. Bailey
+*/
 import java.util.Vector;
 
 public class VectorHeap<E extends Comparable<E>> implements ADTPriorityQueue<E>{
