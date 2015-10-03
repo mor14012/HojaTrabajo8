@@ -1,9 +1,9 @@
 public class Paciente implements Comparable<Paciente> {
 	private String ficha;
-	private int prioridad; //Prioridad de la A a la E (1 a 5)
+	private char prioridad; 
 
 	//Constructor
-	public Paciente(String ficha, int prioridad){
+	public Paciente(String ficha, char prioridad){
 		this.ficha = ficha;
 		this.prioridad = prioridad;
 	}
@@ -13,10 +13,10 @@ public class Paciente implements Comparable<Paciente> {
 	public String getficha(){
 		return ficha;
 	}
-	public void setprioridad(int prioridad){
+	public void setprioridad(char prioridad){
 		this.prioridad = prioridad;
 	}
-	public int getprioridad(){
+	public char getprioridad(){
 		return prioridad;
 	}
 	public int compareTo(Paciente paciente){
@@ -27,7 +27,7 @@ public class Paciente implements Comparable<Paciente> {
 		return 0;
 	}
 	public String toString(){
-		return "String: "+ficha+"\nValue: "+prioridad;
+		return ficha;
 	}
 }
 
